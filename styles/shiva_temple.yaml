@@ -1,0 +1,112 @@
+name: shiva_temple
+bpm: 50
+tonic_hz: 110.0
+melody: [0, 2, 3, 5, 3, 2, 0, -2, 0]
+notes_per_phrase: 5
+sing: true
+default_voice: hm_omega
+default_speed: 0.78
+default_repeat: 1
+default_text: "ॐ नमः शिवाय।"
+syllable_sec: 0.62
+om_sec: 4.5
+sustain: 2.0
+breath: 0.0
+pause: 0.85
+pause_jitter: 0.25
+section_pause_sec: 3.0
+timing_jitter: 0.02
+pitch_jitter_cents: 4.0
+level_jitter: 0.07
+intro_bars: 2.5
+outro_bars: 3.5
+
+ornament:
+  vibrato: 0.12
+  vibrato_rate: 4.2
+  vibrato_onset: 0.70
+  vibrato_irregular: 0.30
+  drift_cents: 2.5
+  drift_rate: 0.13
+  scoop: 0.0
+  glide_ms: 180
+  kan: 0.0
+  taan: 0.0
+
+call_response:
+  enabled: false
+
+drone:
+  enabled: true
+  gain: 0.24
+  step: 2.2
+  decay: 8.0
+  pattern: [0, 7, 0, 0]
+
+pad:
+  enabled: false
+
+drums: null
+
+bell:
+  enabled: true
+  gain: 0.09
+  ratio: 1.5
+  every: 28
+
+room:
+  enabled: true
+  gain: 0.012
+  lowpass: 1800
+  highpass: 80
+  rate: 0.06
+  mod: 0.35
+
+texture:
+  lowpass: 12000
+  highpass: 30
+  width: 1.0
+  vinyl: 0.0
+  wobble: 0.0
+
+reverb:
+  decay: 5.5
+  mix: 0.34
+  predelay: 0.04
+  damp: 4200
+
+vocal:
+  lowcut: 70
+  warmth_hz: 180
+  warmth: 2.0
+  presence_hz: 6500
+  presence: -1.2
+  saturation: 0.08
+  saturation_drive: 1.3
+  deess: 0.15
+  thresh: -20
+  ratio: 1.8
+  intensity: 1.0
+  reverb: 0.28
+  reverb_decay: 4.5
+  predelay: 0.03
+  echo:
+    enabled: false
+
+mix:
+  bed_db: -8
+
+master:
+  lufs: -16
+
+chatterbox:
+  model_dir: assets/chatterbox_onnx
+  voice: assets/refs/hindi_male_fleurs.wav
+  language: hi
+  exaggeration: 0.40
+  temperature: 0.8
+  top_p: 0.95
+  min_p: 0.05
+  max_new_tokens: 1000
+  threads: 4
+  sustain: 1.35

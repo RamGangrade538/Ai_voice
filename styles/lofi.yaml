@@ -1,0 +1,86 @@
+name: lofi
+bpm: 68
+tonic_hz: 130.81
+melody: [0, 3, 7, 5, 3, 2, 0, -2, 0, 3, 5, 7, 5, 3, 2, 0]
+notes_per_phrase: 8
+sing: true
+default_voice: hm_psi
+default_speed: 0.86
+default_repeat: 3
+default_text: "श्री कृष्ण गोविंद हरे मुरारे।"
+breath: 0.0
+pause: 0.7
+intro_bars: 2
+outro_bars: 2
+
+sustain: 1.35
+
+ornament:
+  vibrato: 0.26
+  vibrato_rate: 4.9
+  vibrato_onset: 0.42
+  scoop: 0.4
+  glide_ms: 85
+  kan: 1.0
+  taan: 0.0
+
+drone:
+  enabled: true
+  gain: 0.18
+  step: 2.4
+  decay: 8.0
+  pattern: [0, 7, 0, 0]
+
+pad:
+  enabled: true
+  kind: rhodes
+  gain: 0.09
+  chord: [0, 3, 7, 10]
+  octave: 1
+  progression: [0, -3, -5, -7]
+
+drums:
+  kind: lofi
+  swing: 0.14
+  kick: [0.0, 2.5]
+  snare: [1.0, 3.0]
+
+bell:
+  enabled: false
+  gain: 0.1
+  ratio: 2.0
+  every: 32
+
+texture:
+  lowpass: 8500
+  highpass: 40
+  width: 1.15
+  vinyl: 0.06
+  wobble: 0.0018
+  wobble_rate: 0.28
+
+reverb:
+  decay: 2.6
+  mix: 0.26
+  predelay: 0.025
+  damp: 5000
+
+vocal:
+  lowcut: 95
+  deess: 0.3
+  thresh: -19
+  ratio: 2.5
+  reverb: 0.24
+  reverb_decay: 2.4
+  predelay: 0.025
+  echo:
+    enabled: true
+    time: 0.35
+    feedback: 0.22
+    mix: 0.12
+
+mix:
+  bed_db: -8
+
+master:
+  lufs: -14

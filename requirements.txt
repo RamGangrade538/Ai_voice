@@ -1,0 +1,8 @@
+kokoro>=0.9.4
+misaki[hi]
+soundfile
+numpy
+scipy
+pyyaml
+pyworld
+matchering

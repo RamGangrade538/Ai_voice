@@ -1,0 +1,128 @@
+name: hare_krishna
+bpm: 78
+tonic_hz: 130.81
+melody: [0, 2, 4, 5, 7, 5, 4, 2, 0]
+notes_per_phrase: 6
+sing: true
+default_voice: hm_omega
+default_speed: 0.88
+default_repeat: 1
+default_text: "हरे कृष्ण हरे कृष्ण, कृष्ण कृष्ण हरे हरे।"
+syllable_sec: 0.48
+om_sec: 3.0
+sustain: 1.6
+breath: 0.0
+pause: 0.45
+pause_jitter: 0.20
+section_pause_sec: 1.8
+timing_jitter: 0.015
+pitch_jitter_cents: 3.0
+level_jitter: 0.05
+intro_bars: 2.0
+outro_bars: 3.0
+
+ornament:
+  vibrato: 0.22
+  vibrato_rate: 4.8
+  vibrato_onset: 0.55
+  vibrato_irregular: 0.24
+  drift_cents: 2.0
+  drift_rate: 0.15
+  scoop: 0.15
+  glide_ms: 130
+  kan: 0.6
+  taan: 0.0
+
+call_response:
+  enabled: false
+
+drone:
+  enabled: true
+  gain: 0.20
+  step: 1.8
+  decay: 6.5
+  pattern: [0, 7, 0, 0]
+
+pad:
+  enabled: true
+  kind: harmonium
+  gain: 0.06
+  chord: [0, 4, 7]
+  octave: 1
+
+drums:
+  kind: tabla
+  manjira: true
+  pattern:
+    - [0.0, dha, 0.85]
+    - [0.75, tin, 0.40]
+    - [1.5, na, 0.42]
+    - [2.0, dha, 0.70]
+    - [3.0, tin, 0.46]
+    - [3.5, na, 0.38]
+
+bell:
+  enabled: true
+  gain: 0.10
+  ratio: 2.0
+  every: 16
+
+room:
+  enabled: true
+  gain: 0.010
+  lowpass: 2000
+  highpass: 70
+  rate: 0.05
+  mod: 0.30
+
+texture:
+  lowpass: 14000
+  highpass: 35
+  width: 1.05
+  vinyl: 0.0
+  wobble: 0.0
+
+reverb:
+  decay: 2.8
+  mix: 0.28
+  predelay: 0.025
+  damp: 6000
+
+vocal:
+  lowcut: 80
+  warmth_hz: 180
+  warmth: 1.8
+  presence_hz: 6500
+  presence: -0.8
+  saturation: 0.06
+  saturation_drive: 1.25
+  deess: 0.20
+  thresh: -19
+  ratio: 2.2
+  intensity: 1.0
+  reverb: 0.24
+  reverb_decay: 2.6
+  predelay: 0.02
+  echo:
+    enabled: true
+    time: 0.38
+    feedback: 0.22
+    mix: 0.10
+
+mix:
+  bed_db: -9
+
+master:
+  lufs: -14
+
+chatterbox:
+  model_dir: assets/chatterbox_onnx
+  voice: assets/refs/hindi_male_fleurs.wav
+  language: hi
+  exaggeration: 0.50
+  temperature: 0.8
+  top_p: 0.95
+  min_p: 0.05
+  max_new_tokens: 1000
+  threads: 4
+  sustain: 1.15

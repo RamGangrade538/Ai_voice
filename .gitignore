@@ -1,0 +1,34 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Generated audio / renders
+out/
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+
+# Images / media
+*.png
+*.jpg
+*.jpeg
+
+# Env / secrets
+.env
+.env.*
+*.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Stray pip output
+=*

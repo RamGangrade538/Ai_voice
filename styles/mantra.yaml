@@ -1,0 +1,77 @@
+name: mantra
+bpm: 55
+tonic_hz: 130.81
+melody: [0, 2, 0, -3, 0, 2, 3, 2, 0]
+notes_per_phrase: 5
+sing: true
+default_voice: hm_psi
+default_speed: 0.82
+default_repeat: 6
+default_text: "ॐ नमः शिवाय।"
+breath: 0.0
+pause: 0.9
+intro_bars: 2
+outro_bars: 2
+
+sustain: 1.9
+
+ornament:
+  vibrato: 0.24
+  vibrato_rate: 4.6
+  vibrato_onset: 0.50
+  scoop: 0.35
+  glide_ms: 90
+  kan: 2.0
+  taan: 0.0
+
+drone:
+  enabled: true
+  gain: 0.30
+  step: 1.7
+  decay: 7.0
+  pattern: [0, 7, 0, 0]
+
+pad:
+  enabled: true
+  kind: harmonium
+  gain: 0.035
+  chord: [0, 7]
+  octave: 1
+
+drums: null
+
+bell:
+  enabled: true
+  gain: 0.18
+  ratio: 2.0
+  every: 16
+
+texture:
+  lowpass: 14000
+  highpass: 35
+  width: 1.0
+  vinyl: 0.0
+  wobble: 0.0
+
+reverb:
+  decay: 4.5
+  mix: 0.34
+  predelay: 0.03
+  damp: 5200
+
+vocal:
+  lowcut: 85
+  deess: 0.2
+  thresh: -19
+  ratio: 2.5
+  reverb: 0.34
+  reverb_decay: 3.6
+  predelay: 0.03
+  echo:
+    enabled: false
+
+mix:
+  bed_db: -10
+
+master:
+  lufs: -14

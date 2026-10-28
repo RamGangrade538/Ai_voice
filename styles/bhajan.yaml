@@ -1,0 +1,99 @@
+name: bhajan
+bpm: 72
+tonic_hz: 130.81
+melody: [0, 2, 3, 2, 0, -2, 0, 3, 2, 3, 5, 3, 2, 0, -2, 0]
+notes_per_phrase: 8
+sing: true
+default_voice: hm_psi
+default_speed: 0.88
+default_repeat: 4
+default_text: "श्री राम जय राम जय जय राम।"
+breath: 0.0
+pause: 0.55
+intro_bars: 1.5
+outro_bars: 1.5
+
+sustain: 1.7
+
+ornament:
+  vibrato: 0.30
+  vibrato_rate: 5.1
+  vibrato_onset: 0.45
+  scoop: 0.6
+  glide_ms: 110
+  kan: 1.2
+  taan: 0.0
+
+call_response:
+  enabled: true
+  voice: null
+  transpose: 12
+  every: 2
+  gain: 0.55
+  gap: 0.12
+  dur: 0.95
+  speed: 1.0
+
+drone:
+  enabled: true
+  gain: 0.16
+  step: 1.8
+  decay: 6.0
+  pattern: [0, 7, 0, 0]
+
+pad:
+  enabled: true
+  kind: harmonium
+  gain: 0.07
+  chord: [0, 3, 7]
+  octave: 1
+
+drums:
+  kind: tabla
+  manjira: true
+  pattern:
+    - [0.0, dha, 0.9]
+    - [0.75, tin, 0.45]
+    - [1.5, na, 0.45]
+    - [2.0, dha, 0.75]
+    - [2.75, tin, 0.5]
+    - [3.5, dha, 0.6]
+
+bell:
+  enabled: true
+  gain: 0.12
+  ratio: 2.0
+  every: 24
+
+texture:
+  lowpass: 13000
+  highpass: 35
+  width: 1.05
+  vinyl: 0.0
+  wobble: 0.0
+
+reverb:
+  decay: 2.2
+  mix: 0.25
+  predelay: 0.02
+  damp: 6200
+
+vocal:
+  lowcut: 90
+  deess: 0.25
+  thresh: -19
+  ratio: 2.5
+  reverb: 0.22
+  reverb_decay: 2.2
+  predelay: 0.02
+  echo:
+    enabled: true
+    time: 0.42
+    feedback: 0.28
+    mix: 0.14
+
+mix:
+  bed_db: -9
+
+master:
+  lufs: -14
