@@ -40,14 +40,14 @@ def sentence_speed(sentence: str, idx: int, base: float, rng: random.Random) -> 
     n = len(sentence)
     speed = base
     if sentence.endswith("?"):
-        speed -= 0.02
-    if n < 45:
-        speed += 0.03
-    elif n > 150:
-        speed -= 0.03
-    speed += 0.02 * math.sin(idx * 0.7)
-    speed += rng.uniform(-0.025, 0.025)
-    return clamp(speed, base - 0.10, base + 0.08)
+        speed -= 0.05
+    if n < 30:
+        speed += 0.10
+    elif n > 100:
+        speed -= 0.10
+    speed += 0.10 * math.sin(idx * 0.5)
+    speed += rng.uniform(-0.05, 0.05)
+    return clamp(speed, base - 0.20, base + 0.15)
 
 
 def sentence_pause(sentence: str, rng: random.Random) -> float:

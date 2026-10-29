@@ -1,6 +1,6 @@
 name: lofi
-bpm: 68
-tonic_hz: 130.81
+bpm: 55
+tonic_hz: 110.0
 melody: [0, 3, 7, 5, 3, 2, 0, -2, 0, 3, 5, 7, 5, 3, 2, 0]
 notes_per_phrase: 8
 sing: true
@@ -16,17 +16,17 @@ outro_bars: 2
 sustain: 1.35
 
 ornament:
-  vibrato: 0.26
+  vibrato: 0.40
   vibrato_rate: 4.9
   vibrato_onset: 0.42
-  scoop: 0.4
+  scoop: 0.7
   glide_ms: 85
   kan: 1.0
   taan: 0.0
 
 drone:
   enabled: true
-  gain: 0.18
+  gain: 0.25
   step: 2.4
   decay: 8.0
   pattern: [0, 7, 0, 0]
@@ -34,16 +34,12 @@ drone:
 pad:
   enabled: true
   kind: rhodes
-  gain: 0.09
+  gain: 0.15
   chord: [0, 3, 7, 10]
   octave: 1
   progression: [0, -3, -5, -7]
 
-drums:
-  kind: lofi
-  swing: 0.14
-  kick: [0.0, 2.5]
-  snare: [1.0, 3.0]
+drums: null
 
 bell:
   enabled: false
@@ -52,7 +48,7 @@ bell:
   every: 32
 
 texture:
-  lowpass: 8500
+  lowpass: 4500
   highpass: 40
   width: 1.15
   vinyl: 0.06
@@ -60,8 +56,8 @@ texture:
   wobble_rate: 0.28
 
 reverb:
-  decay: 2.6
-  mix: 0.26
+  decay: 4.0
+  mix: 0.35
   predelay: 0.025
   damp: 5000
 
@@ -80,7 +76,7 @@ vocal:
     mix: 0.12
 
 mix:
-  bed_db: -8
+  bed_db: -5
 
 master:
   lufs: -14

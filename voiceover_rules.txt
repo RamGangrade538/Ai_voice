@@ -1,0 +1,30 @@
+NARRATION PERFORMANCE RULES (for horror stories)
+
+1. No timestamps or headings in the spoken script. Remove labels like [00:00–00:45], "The Hook," and "Final Reveal."
+
+2. Don't read sound effects aloud. Remove [SFX: footsteps], [MUSIC: piano], and similar editing instructions from the narration text. Add those separately during editing.
+
+3. Use natural punctuation. Commas, periods, and occasional ellipses help guide delivery. Don't add a dramatic pause after every sentence.
+
+4. Avoid overacting. Start like you're telling a friend something strange that happened to you. Let fear develop gradually.
+
+5. Change your emotional delivery. Begin tired and slightly sarcastic, become confused and uneasy, then vulnerable and emotional. The ending should be quiet and sincere.
+
+6. Keep dialogue believable. The old woman should sound calm and ordinary, not like a stereotypical evil character.
+
+7. Don't force a whisper. Use a lower, softer voice only when the character genuinely feels frightened or emotionally overwhelmed.
+
+8. Leave room for silence. Add pauses before important revelations, not after every scary sentence.
+
+9. Avoid robotic pacing. Vary sentence lengths and let some lines flow together naturally.
+
+10. Keep the narration separate from editing directions. Your voice generator or narrator should receive only the words meant to be spoken.
+
+PROJECT CONSTRAINTS (always remember):
+- This project is offline-only, CPU-only, no internet dependencies
+- Use Kokoro TTS voices (am_fenrir, am_onyx, bm_george, af_heart, etc.)
+- Render to 48kHz mono WAV + 192kbps MP3
+- Humanization built-in: per-sentence speed variation, pitch offsets, jittered pauses
+- Output contract: −16 LUFS / −1.5 dBTP, plus 192 kbps MP3
+- Keep renders single-job at a time (protect RAM)
+- out/ directory is git-ignored (never commit audio files)
